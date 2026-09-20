@@ -8,7 +8,7 @@
 body{
     background: #E8E5E1; /*website color*/
     min-height: 100vh;
-    width: 100%;
+    min-width: 1200px;
     overflow: auto;
 }
 
@@ -76,6 +76,7 @@ body{
     justify-content: center;
     gap: 20px;
     animation: luxuryEntry 1.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    -webkit-animation: luxuryEntry 1.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 .part-port{
     font-weight: 300;
@@ -97,7 +98,9 @@ body{
     font-weight: 400;
     opacity: 0;
     animation: fadeInSub 1.8s ease forwards;
+    -webkit-animation: fadeInSub 1.8 ease forwards;
     animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
 }
 .footer-name{
     position: absolute;
@@ -108,7 +111,9 @@ body{
     letter-spacing: 3px;
     opacity: 0;
     animation: fadeInSub 1.8 ease forwards;
+    -webkit-animation: fadeInSub 1.8 ease forwards;
     animation-delay: 0.8s;
+    -webkit-animation-delay: 0.8s;
 }
 
 /*translat setting*/
@@ -366,24 +371,8 @@ body{
 
 .project-grid{
     display: grid;
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(4, minmax(250px, 1fr));
-}
-@media (max-width: 768px) {
-    .project-grid{
-        display: flex;
-        overflow: auto;
-        scroll-snap-type: x mandatory;
-        gap: 15px;
-        padding-bottom: 10px;
-        -webkit-overflow-scrolling: touch;
-    }
-    .project-info-box{
-        flex: 0 0 85%;
-        min-width: 260px;
-        scroll-snap-align: start;
-    }
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 .project-info-box{
     background: #faf8f5;
