@@ -1321,7 +1321,8 @@ textarea{
 .nav-links{
     list-style: none;
     display: flex;
-    gap: 2.5rem;
+    gap: 0.8rem;
+    justify-content: space-between;
     align-items: center;
     margin: 0;
     padding: 0;
@@ -1330,7 +1331,7 @@ textarea{
 .nav-links a{
     text-decoration: none;
     color: rgb(28, 56, 49);
-    font-size: 1.05rem;
+    font-size: 0.75rem;
     font-weight: 500;
     font-family: 'Cormorant Garamond', serif;
     transition: color 0.3s ease;
