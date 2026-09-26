@@ -1436,3 +1436,17 @@ textarea{
         visibility: visible;
     }
 }
+@media screen and (max-width: 768px) {
+    html{
+        width: 1200px;
+        transform: scale(0.33);
+        transform-origin: top left;
+        overflow-x: hidden;
+    }
+    body{
+        width: 1200px;
+        min-width: 1200px;
+        overflow-x: hidden;
+    }
+    
+}
