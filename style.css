@@ -8,8 +8,8 @@
 body{
     background: #E8E5E1; /*website color*/
     min-height: 100vh;
-    min-width: 1200px;
-    overflow: auto;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 
@@ -1377,26 +1377,28 @@ textarea{
 }
 @media (max-width: 768px) {
     .navbar{
-        width: 90%;
-        padding: 0.8rem 1.5rem;
-        top: 15px;
+        width: 92%;
+        padding: 0.5rem 0.8rem;
+        top: 10px;
     }
     .nav-links{
-        position: fixed;
-        top: 0;
-        right: -100%;
-        flex-direction: column;
-        background-color: rgba(250, 248, 245, 0.98);
-        backdrop-filter: blur(15px);
+        position: static;
+        height: auto;
         width: 100%;
-        height: 100vh;
-        justify-content: center;
-        align-items: center;
-        transition: 0.5s cubic-bezier(0.077, 0, 0.175, 1);
-        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.05);
-        gap: 2.5rem;
-        font-size: 1.4rem;
-        z-index: 1000;
+        right: auto;
+        background: transparent;
+        backdrop-filter: none;
+        box-shadow: none;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 4px;
+    }
+    .nav-links a{
+        font-size: 0.65rem;
+    }
+    .navbar .lang-btn{
+        padding: 0.2rem;
+        font-size: 0.65rem;
     }
     .nav-links li:has(.lang-btn){
         margin-left: 0;
