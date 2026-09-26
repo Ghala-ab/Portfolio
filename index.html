@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><!--website Starting language-->
+
+<!--website instruction-->
+<head> 
+    <meta charset="UTF-8"> <!--Character encoding-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"><!--page setup-->
+    <title>Portfolio Ghala</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&display=swap" rel="stylesheet"><!--english font-->
+    <link rel="stylesheet" href="style.css"><!--link css-->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:wght@300;400;600&display=swap" rel="stylesheet"><!--arabic font-->
+</head>
+
+
+<!--page content-->
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about-heading">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button class="lang-btn" onclick="toggleLanguage()">En / Ar</button></li>
+        </ul>
+
+    </nav>
+    <section class="hero-section">
+        <div class="year-grad">2026</div>
+        <div class="lang-container">
+            
+        </div>
+
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>
+                    <span class="part-Port" id="text-port">Port</span>
+                    <span class="part-folio" id="text-folio">FOLIO</span>
+                </h1>
+                <p class="sub-title" id="sub-text">Computer Enginner</p>
+            </div>
+            <div class="footer-name" id="text-name">Ghala ALotibi</div>
+        </div>
+    </section>
+    <!-- end of the first page-->
+
+
+
+
+
+    <section class="about-section">
+           <div class="abot-image-wrapper">
+                <img src="about-image.png" alt="" class="about-image">
+            </div>
+        <h2 class="about-title reveal-on-scroll" id="about-heading">About Me</h2>
+        <div class="about-first reveal-on-scroll">
+            <p id="about-first-text">Holding a Bachelor’s degree in Computer Engineering has given me a strong professional foundation. However, I believe a degree is just the starting point. My goal is to transform academic knowledge into practical expertise, turning what I have learned into a craft I continuously develop and master,  so that computer engineering is not just a title I hold, but a craft I master.</p>
+        </div>
+        
+        <div class="about-grid-layout">
+            <div class="about-second reveal-on-scroll">
+                <div class="second-logo">
+                    <img src="tu-logo.png" alt="" class="tu-logo">
+                    <p id="about-second-text">I built academic foundation in embedded systems, signal processing, machine learning, and electronics, while developing through hands-on engineering projects the ability to integrate software and hardware and transform engineering concepts into practical solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end of the second page-->
+
+    <section class="projects-section" id="projects">
+        <div style="position: relative; display: inline-block;">
+            <h2 class="projects-title reveal-on-scroll">Featured Projects</h2>
+        </div>
+
+        <div class="project-card reveal-on-scroll">
+            <div class="project-header-container">
+                <div class="project-header-text">
+                    <span class="project-category">Capstone Project</span>
+                    <h3 class="project-name">A Smart Non-Invasive System for Detecting Elevated Intracranial Pressure (ICP)</h3>
+                    <div class="project-badge">
+                        <img src="3rd-re.png" alt="" class="badge-icon"> <span id="badge-1">3rd Place - Taif University Graduation Projects Competition</span>
+                        <img src="patent-Image.png" alt="" class="badge-icon"> <span id="badge-2">Patent Application - Under Formal Examination SAIP</span>
+                    </div>
+                </div>
+                <div class="project-main-image">
+                    <img src="brain_controller image.png" alt="">
+                </div>
+            </div>    
+        
+
+
+            <div class="project-grid">
+                <div class="project-info-box">
+                    <h4>The Challenge</h4>
+                    <p>The need for a safe, reliable, and non-invasive approach to continuous ICP monitoring.</p>
+                </div>
+                <div class="project-info-box">
+                    <h4>The Solution</h4>
+                    <p>We developed a smart, non-invasive system that measures the tympanic membrane’s response to acoustic and pressure stimuli, aiming to extract signals that can be analyzed to support the detection of elevated ICP.</p>
+                </div>
+                <div class="project-info-box">
+                    <h4>My Role</h4>
+                    <p>Team Lead, responsible for hardware integration and signal processing, while coordinating the team’s technical work.</p>
+                </div>
+                <div class="project-info-box">
+                    <h4>Prototype & Outcome</h4>
+                    <p>A working prototype was developed and practically tested using a simulated ear model. The project successfully reached the prototype stage, secured 3rd place in the Graduation Projects Competition, and an official patent application was filed.</p>
+                </div>
+            </div>
+
+            <!--multimedia-->
+            <div class="project-media-grid">
+                <div class="media-item" onclick="openMediaModal('video', 'prototype-video.MP4')">
+                    <div class="video-poster-container">
+                        <img src="protoype-cover.jpeg" alt="" class="media-poster-img">
+                        <div class="play-button-overlay">
+                            <svg viewBox="0 0 24 24" width="36" height="36" fill="#fff"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                    </div>
+                    <span class="media-caption">Prototype Demonstration (Click to Watch)</span>
+                </div>
+         
+                <div class="media-item" onclick="openMediaModal('image', 'award.jpeg')">
+                    <div class="image-zoom-container">
+                        <img src="award.jpeg" alt="" class="zoomable-img">
+                        <div class="zoom-icon-overlay">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="#fff"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.16 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                        </div>
+                    </div>
+                    <span class="media-caption">Project Overview - Taif University College of Computers Magazine (Click to Watch)</span>
+                </div>
+                <div class="media-item" onclick="openMediaModal('video', 'second-video.mov')">
+                    <div class="video-poster-container">
+                        <img src="second-cover.jpeg" alt="" class="media-poster-img">
+                        <div class="play-button-overlay">
+                            <svg viewBox="0 0 24 24" width="36" height="36" fill="#fff"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                    </div>
+                    <span class="media-caption">3rd Place Award Ceremony (Click to Watch)</span>
+                </div>    
+            </div>    
+        </div>
+    </section>
+
+        <div id="mediaModal" class="media-modal" onclick="closeMediaModal()">
+            <div class="modal-content" onclick="event.stopPropagation()">
+                <span class="close-modal" onclick="closeMediaModal()">&times;</span>
+                <video id="modalVideo" controls style="display: none;" src>
+                    <source src="" type="video/MP4">
+                    your browser dose not support video playback
+                </video>
+                <img id="modalImage" src="" alt="" style="display: none; width: 100%; height: auto; max-height: 80vh; object-fit: contain;">
+            </div>
+        </div>
+        <!--End of the section projects-->
+
+
+
+
+        <section class="experience-section" id="experience">
+            <div class="editorial-title-wrapper reveal-on-scroll">
+                <span class="title-decorator-line"></span>
+                <h2 class="experience-title-ed" id="exp-title-text">Professional Experience</h2>
+                <span class="title-decorator-line"></span>
+            </div>
+
+            <div class="editorial-exp-wrapper reveal-on-scroll">
+                <div class="ed-header-row">
+                    <span class="ed-tag" id="exp-tag-text">Field Training - 2026</span>
+                    <span class="ed-date" id="exp-date-text">05 Jul - 16 AUG</span>
+                </div>
+
+                <div class="ed-main-title-block">
+                    <h3 class="ed-role" id="exp-role-text">Technical Support Trainee</h3>
+                    <p class="ed-place" id="exp-place-text">eHealth Department &bull; Children’s Hospital, Taif</p>
+                </div>
+
+                <hr class="ed-divider">
+
+                <div class="ed-content-grid">
+                    <div class="ed-left-narrative">
+                        <p class="ed-lead" id="exp-lead-text">
+                            Practical experience within the eHealth IT support team, supporting electronic health care 
+                            systems and handling technical issues in a hospital environment.
+                        </p>
+
+                        <div class="ed-rec-banner clickable-rec" onclick="openMediaModal('image', 'rec-letter.jpeg')">
+                            <img src="letter-icon.png" alt="" class="custom-rec-icon">
+                            <div>
+                                <h4 id="exp-rec-title">Recommendation Letter</h4>
+                                <p>
+                                    <span id="exp-rec-desc">Received from the training organization.</span>
+                                    <em id="exp-rec-click">(Click to view letter)</em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ed-right-responsibilities">
+                        <h4 class="ed-resp-title" id="exp-resp-title">Key Responsibilities</h4>
+                        <ul class="ed-list">
+                            <li id="exp-task-1">Handled technical incidents through Shahm.</li>
+                            <li id="exp-task-2">Managed user accounts and staff data through Oasis.</li>
+                            <li id="exp-task-3">Formatted and configured computers, and installed essential software.</li>
+                            <li id="exp-task-4">Assisted with technical troubleshooting and user support.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End of the sec train-->
+
+
+
+        <section class="certificates-section" id="certificates">
+             <div class="editorial-title-wrapper reveal-on-scroll">
+                <span class="title-decorator-line"></span>
+                <h2 class="certificates-title-ed" id="cert-title-text">Certificates & Achievements</h2>
+                <span class="title-decorator-line"></span>
+            </div>
+
+            <div class="editorial-cert-wrapper reveal-on-scroll">
+                <div class="live-grid-container">
+                    <div class="live-card media-preview-card clickable-cert"
+                        onclick="openMediaModal('image', 'graduation-cert.jpeg')">
+                        <div class="card-thumbnail-wrapper">
+                            <img src="graduation-cert.jpeg" alt="" class="cert-thumbnail-img">
+                            <div class="card-thumbnail-overlay">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                    <line x1="11" y1="8" x2="11" y2="14"></line>
+                                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                                </svg>
+                                <span id="cert-hint-1">Click to view certificates</span>
+                            </div> 
+                        </div>
+                        <div class="live-card-body">
+                            <h4 id="cert-title-1">Bachelor of Computer Engineering</h4>
+                            <p id="cert-desc-1">Taif University</p>
+                        </div>
+                        <span class="live-tag" id="cert-tag-1">Academic Qualification - 2026</span>
+                    </div>
+
+                    <div class="live-card media-preview-card clickable-cert"
+                        onclick="openMediaModal('image', 'award-cert.jpeg')">
+                        <div class="card-thumbnail-wrapper">
+                            <img src="award-cert.jpeg" alt="" class="cert-thumbnail-img">
+                            <div class="card-thumbnail-overlay">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                    <line x1="11" y1="8" x2="11" y2="14"></line>
+                                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                                </svg>
+                                <span id="cert-hint-2">Click to view certificates</span>
+                            </div>
+                        </div>
+                        <div class="live-card-body">
+                            <h4 id="cert-title-2">3rd Place in Graduation Projects Competition</h4>
+                            <p id="cert-desc-2">Taif University</p>
+                        </div>
+                        <span class="live-tag" id="cert-tag-2">Competition Certificate - 2026</span>   
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End of the cert sec-->
+
+        <section class="contact-editorial-modal-system" id="contact">
+            <div class="contact-gateway-card" onclick="openContactPopup()">
+                <h3 class="gateway-role" id="gatewayTitle">A Space to Connect</h3>
+                <p class="gateway-place" id="gatewayDesc">The journey may not always begin with answers to every question, but it always begins with curiosity that drives us to seek them.</p>
+                <div class="gateway-action-btn">
+                    <span id="gatewayBtnText">Open Connection Space</span>
+                    <svg xmlns="https://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="editorial-popup-overlay" id="contactPopupOverlay" onclick="handleOutsideClick(event)">
+                <div class="editorial-popup-box" id="popupBox">
+                    <div class="popup-close-btn" onclick="closeContactPopup()">✕</div>
+                    <h3 id="popupMainTitle" style="font-size: 1.8rem; color: #8C3A32; margin: 0 0 5px 0;">Let’s create a better future together</h3>
+                    <p id="popupSubTitle" style="color: #6e2b26; font-style: italic; margin: 0 0 20px 0;">Choose your preferred way to reach out or drop a direct message.</p>
+
+                    <div class="popup-grid">
+                        <div class="puzzle-piece">
+                            <div>
+                                <h3 class="puzzle-section-title" id="getInToutchTitle">Get in Touch</h3>
+                                <div class="contact-methods-list">
+                                    <a href="mailto:Ghala.ab@outlook.com" class="contact-method-item">
+                                        <div class="contact-icon-box">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                                <polyline points="22,6 12,13 2,6"></polyline>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h4 id="emailLable">Email</h4>
+                                            <p>Ghala.ab@outlook.com</p>
+                                        </div>
+                                    </a>
+
+
+
+                                    <a href="https://wa.me/966557873492" target="_blank" class="contact-method-item">
+                                        <div class="contact-icon-box">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                                            </svg>
+
+
+                                        </div>
+                                        <div>
+                                            <h4 id="phoneLable">WhatsApp</h4>
+                                            <p>+966 55 787 3492</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="puzzle-art-container">
+                                <img src="puzzle-art.png" alt="" class="puzzle-art-img">
+                            </div>
+                        </div>
+
+                        <div class="puzzle-piece">
+                            <div>
+                                <h3 class="puzzle-section-title" id="sendMessageTitle">Send a Message</h3>
+                                <div class="contact-form-container">
+                                    <form id="contactForm" action="https://formspree.io/f/mnpnqkzq" method="post" onsubmit="sendContactForm(event)">
+                                        <div class="form-group-ed">
+                                            <label id="nameLable">Full Name</label>
+                                            <input type="text" name="name" id="nameInput" placeholder="Enter your name..." required>
+                                        </div>
+                                        <div class="form-group-ed">
+                                            <label id="emailInputLable">Email</label>
+                                            <input type="email" name="email" id="emailInput" placeholder="Enter your email..." required>
+                                        </div>
+                                        <div class="form-group-ed">
+                                            <label id="messageLable">Message</label>
+                                            <textarea name="message" id="messageInput" rows="10" placeholder="Write your message here..." required></textarea>
+                                        </div>
+                                        <button type="submit" class="editorial-submit-btn" id="submitBtn">Send Message</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="script.js"></script>
+        </body>
+</html>
