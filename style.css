@@ -8,7 +8,8 @@
 body{
     background: #E8E5E1; /*website color*/
     min-height: 100vh;
-    min-width: 1200px;
+    width: 1200px;
+    margin: 0 auto;
     overflow: auto;
 }
 
